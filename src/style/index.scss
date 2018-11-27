@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+.fll {
+  float: left;
+}
+
+.flr {
+  float: right;
+}
+
+.clearfix {
+  &::after{
+    content: '';
+    display:block;
+    clear: both;
+  }
+}
+
+.ml-200{
+  margin-left: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin:0;
+  padding: 0;
+}
+
+*{
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  }
