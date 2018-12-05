@@ -43,7 +43,7 @@
             <li class="item">新闻中心</li>
           </ul>
         </div>
-        <div class="bot-item fll" style="padding-left:80px;">
+        <div class="bot-item fll" style="padding-left:74px;">
           <div class="title">关于福禄克网络</div>
           <div class="code">
               <img src="/static/img/youku.png" alt="">
@@ -90,6 +90,9 @@
 ul{
   margin:0;
   padding:0;
+  }
+  li{
+    list-style: none;
   }
 .bottom {
   width: 100%;

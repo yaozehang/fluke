@@ -170,6 +170,9 @@
 </script>
 
 <style scoped lang="scss">
+li{
+  list-style: none;
+}
 .news-item {
   padding-top: 30px;
 }

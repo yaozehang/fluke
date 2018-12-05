@@ -12,66 +12,85 @@ const components = {
 
 export default new Router({
   routes: [
+
     {
-      path: '/home',
-      name: 'home',
-      component: components.home
+      path: '/about/news',
+      name: 'news',
+      component: components.news
     },
     {
-      path:'/about/news',
-      name:'news',
-      component:components.news
+      path: '/about/news/newsDetail',
+      name: 'newsDetail',
+      component: components.newsDetail
     },
     {
-      path:'/about/news/newsDetail',
-      name:'newsDetail',
-      component:components.newsDetail
+      path: '/about/call',
+      name: 'call',
+      component: components.call
     },
     {
-      path:'/about/call',
-      name:'call',
-      component:components.call
-    },
-    {
-      path:"/",
-      name:"product",
-      redirect:"/home",
-      component:()=>import("@/views/layout/layout.vue"),
-      children:[
-      {
-        path:"/product",
-        name:"product",
-        component:()=>import("@/views/product/index.vue"),
-        meta:{
-          title:"产品"
+      path: "/",
+      redirect: "/home",
+      component: () => import("@/views/layout/layout.vue"),
+      children: [
+        {
+          path: '/home',
+          name: 'home',
+          component: components.home
         },
-      },
-      {
-        path:"/active",
-        name:"active",
-        component:()=>import("@/views/active/index.vue"),
-        meta:{
-          title:"活动"
-        }
-      },
-      {
-        path:"/education",
-        name:"education",
-        component:()=>import("@/views/product/activeCenter.vue"),
-        meta:{
-          title:"教育"
-        }
-      },     
-    ],
-    
-   },
-   {
-    path:"/detail",
-    name:"DTX",
-    component:()=>import("@/views/product/product_detail.vue"),
-    meta:{
-      title:"DTX系列"
-    }
-  },
+        {
+          path: "/product",
+          name: "product",
+          redirect:"dsx",
+          component: () => import("@/views/product/index.vue"),
+          meta: {
+            title: "产品"
+          },
+          children: [
+            {
+              path: "/dsx",
+              name: "dsx",
+              component: () => import("@/views/product/product.vue"),
+              meta: {
+                title: "列表"
+              }
+            },
+            {
+              path: "cert",
+              name: "cert",
+              component: () => import("@/views/product/second-detail.vue"),
+              meta: {
+                title: "列表2"
+              }
+            },
+          ]
+        },
+        {
+          path: "/active",
+          name: "active",
+          component: () => import("@/views/active/index.vue"),
+          meta: {
+            title: "活动"
+          }
+        },
+        {
+          path: "/education",
+          name: "education",
+          component: () => import("@/views/education/education.vue"),
+          meta: {
+            title: "教育"
+          }
+        },
+      ],
+
+    },
+    {
+      path: "/detail",
+      name: "DTX",
+      component: () => import("@/views/product/productDetail/productDetail.vue"),
+      meta: {
+        title: "DTX系列"
+      }
+    },
   ]
 })

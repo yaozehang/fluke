@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <Header></Header>
+  <div class="container-warp">
     <div>
       <div class="block">
         <swiper :options="swiperOption">
           <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
-            <img :src="slide.imgUrl">
+            <img :src="slide.imgUrl" class="home-swiper">
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
@@ -117,7 +116,7 @@
                 <div class="title">
                   您的工具包中有几颗星
                 </div>
-                <div class="content">
+                <div class="news-content">
                   对于利用福利路康网络的新国家标准详解及最新布线测试知识和技术研讨会--新疆站我们诚挚的邀请您参加福禄克公司举办的2018福禄克新标准详情和最新布线测试技术研讨会。期待您的光临
                 </div>
               </div>
@@ -131,7 +130,7 @@
                 <div class="title">
                   您的工具包中有几颗星
                 </div>
-                <div class="content">
+                <div class="news-content">
                   对于利用福利路康网络的新国家标准详解及最新布线测试知识和技术研讨会--新疆站我们诚挚的邀请您参加福禄克公司举办的2018福禄克新标准详情和最新布线测试技术研讨会。期待您的光临
                 </div>
               </div>
@@ -145,7 +144,7 @@
                 <div class="title">
                   您的工具包中有几颗星
                 </div>
-                <div class="content">
+                <div class="news-content">
                   对于利用福利路康网络的新国家标准详解及最新布线测试知识和技术研讨会--新疆站我们诚挚的邀请您参加福禄克公司举办的2018福禄克新标准详情和最新布线测试技术研讨会。期待您的光临
                 </div>
               </div>
@@ -161,7 +160,7 @@
                 <div class="title">
                   您的工具包中有几颗星
                 </div>
-                <div class="content">
+                <div class="news-content">
                   对于利用福利路康网络的新国家标准详解及最新布线测试知识和技术研讨会--新疆站我们诚挚的邀请您参加福禄克公司举办的2018福禄克新标准详情和最新布线测试技术研讨会。期待您的光临
                 </div>
               </div>
@@ -175,7 +174,7 @@
                 <div class="title">
                   您的工具包中有几颗星
                 </div>
-                <div class="content">
+                <div class="news-content">
                   对于利用福利路康网络的新国家标准详解及最新布线测试知识和技术研讨会--新疆站我们诚挚的邀请您参加福禄克公司举办的2018福禄克新标准详情和最新布线测试技术研讨会。期待您的光临
                 </div>
               </div>
@@ -185,21 +184,15 @@
         </div>
       </div>
     </div>
-    <Bottom></Bottom>
   </div>
 </template>
 
 <script>
-  import Header from '@/components/Header.vue'
-  import Bottom from '@/components/Bottom.vue'
   import 'swiper/dist/css/swiper.css'
-
-import { swiper, swiperSlide } from 'vue-awesome-swiper'
+  import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
   export default {
     components:{
-      Header,
-      Bottom,
       swiper,
       swiperSlide
     },
@@ -225,225 +218,6 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
   }
 </script>
 
-<style scoped lang="scss">
-  .select {
-    width: 100%;
-    height: 50px;
-    background-color: rgb(252,200,0);
-    .select-item {
-      margin-left: 60px;
-      padding-top: 10px;
-      font-size: 16px;
-      font-family: "PingFang";
-      color: rgb( 33, 33, 33 );
-      img {
-        padding-top: 6px;
-        width: 20px;
-        height: 20px;
-      }
-      span {
-        line-height:2;
-        margin-left:5px;
-      }
-    }
-  }
-  .content {
-    .con-title {
-      height: 160px;
-      font-size: 24px;
-      font-weight: 600;
-      text-align: center;
-      .title {
-        display: inline-block;
-        padding-top: 50px;
-        padding-bottom: 15px;
-      }
-      .line {
-        display: block;
-        margin: 0 auto;
-        width: 60px;
-        border-top: 6px solid #000;
-      }
-      .line2 {
-        display: block;
-        margin: 0 auto;
-        width: 120px;
-        border-top: 6px solid #000;
-      }
-    }
-  }
-
-  .product {
-    .pro-752s {
-      width: 750px;
-      height: 390px;
-      background-color: rgb(239,239,239);
-      .pro-title {
-        font-size: 30px;
-        padding-top:80px;
-        font-family: "PingFang";
-        color: rgb( 15, 15, 15 );
-        font-weight: bold;
-      }
-      .pro-content {
-        font-size: 18px;
-        line-height:1.5;
-        padding-top:30px;
-      }
-    }
-    .pro-729 {
-      width: 450px;
-      height: 390px;
-      background-color: #fff;
-      .pro-title2 {
-        font-size: 24px;
-        margin-left:45px;
-        font-family: "PingFang";
-        color: rgb( 15, 15, 15 );
-        font-weight: bold;
-      }
-      .pro-content2 {
-        font-size: 14px;
-        line-height:1.5;
-        padding-top:15px;
-        margin-left:45px;
-        width:350px;
-        font-family: "PingFang";
-        color: rgb( 15, 15, 15 );
-      }
-    }
-    .pro-224 {
-      width: 750px;
-      height: 390px;
-      background-color: rgb(224,224,224);
-      .pro-title {
-        font-size: 30px;
-        padding-top:80px;
-        font-family: "PingFang";
-        color: rgb( 15, 15, 15 );
-        font-weight: bold;
-      }
-      .pro-content {
-        font-size: 18px;
-        line-height:1.5;
-        padding-top:30px;
-      }
-    }
-  }
-
-  .btn1 {
-    margin-top:60px; 
-    width:150px; 
-    height:50px;
-    font-size:18px;
-  }
-  .btn2 {
-    margin-top:30px; 
-    margin-left:45px; 
-    width:120px; 
-    height:40px;
-    font-size:16px;
-    background:rgb(239,239,239)
-  }
-
-  .networks {
-    height: 580px;
-    .net-img {
-      position: relative;
-      z-index: 996;
-      width: 450px;
-      height: 450px;
-    }
-
-    .box-card {
-      width: 870px;
-      height: 540px;
-      position: relative;
-      top: -410px;
-      left: 330px;
-      .text {
-        padding-left: 180px;
-      }
-      .card-right {
-        width: 525px;
-        padding-left: 30px;
-      }
-      .card-title {
-        font-weight: 600;
-        font-size: 18px;
-      }
-      .card-content {
-        font-size: 16px;
-        color: #999;
-        padding: 15px 0;
-      }
-      .card-arrows {
-        font-size: 24px;
-        color: #999;
-      }
-      .box {
-        margin-top: 20px;
-        .date {
-          font-size: 24px;
-          font-family: "PingFang";
-          color: rgb( 33, 33, 33 );
-          font-weight: bold;
-        }
-        .year {
-          font-size: 18px;
-          font-family: "PingFang";
-          color: rgb( 33, 33, 33 );
-        }
-      }
-    }
-  }
-
-  .news {
-    height: 625px;
-    margin-bottom: 40px;
-    background: #fff;
-    .news-item {
-      width: 440px;
-      margin-left: 90px;
-      padding-top: 50px;
-      cursor: pointer;
-    }
-    .news-con {
-      width: 340px;
-      padding:0 15px;
-      box-sizing: border-box;
-      .title {
-        font-size: 18px;
-        font-weight: 600;
-        padding: 15px 0;
-      }
-      .content {
-        padding-bottom: 15px;
-        font-size: 14px;
-        color: #666;
-        line-height: 1.5;
-      }
-    }
-    .news-date {
-      padding: 15px;
-      background-color: rgb(239,239,239);
-      border-radius: 6px;
-    }
-  }
-  .news-item:hover {
-    .news-date {
-      background-color: rgb(252,200,0);
-    }
-    .news-con {
-      background: rgb(239,239,239);
-      border-radius: 6px;
-    }
-  }
-
-  .btn3 {
-    width: 165px;
-    height: 45px;
-    border: 1px solid #000;
-    border-radius: 0;
-  }
+<style scoped lang="scss" src="./home.scss">
+  
 </style>

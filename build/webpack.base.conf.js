@@ -13,6 +13,12 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
+    // app: ['./node_modules/babel-polyfill/dist/polyfill.js','./src/main.js'],
+    // app: ['babel-polyfill','./src/main.js']
+    // app:'./src/main.js'
+  },
+  entry: {
+    'babel-polyfill': 'babel-polyfill',
     app: './src/main.js'
   },
   //地图

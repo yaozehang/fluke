@@ -10,7 +10,7 @@
             <div class="menu2">
                 <Second></Second>  
                 <div>
-                    
+                    <router-view></router-view>
                 </div>
             </div>
         </div>
@@ -23,8 +23,7 @@
     import Second from "@/components/secondmenu/secondMenu.vue"
     export default {
         components: {
-            Header,
-           
+            Header,    
             Bottom,
             Second
         },
@@ -37,18 +36,12 @@
 </script>
 
 <style lang="scss">
-    /* .container {
-        width: 100%;
-        
-    } */
     .content{
         width: 1200px;
         margin: 0 auto;
     }
-
-    .breadcrumb {
-        padding: 15px;
-
+    .desc-breadcrumb {
+        padding: 25px 0;
     }
 
     .menu2 {

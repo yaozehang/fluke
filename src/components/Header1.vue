@@ -80,15 +80,16 @@
     .userInfo{
         line-height: 2;
         margin-left: 30px;
-    }
+    };
     .userInfo a{
         color: #ccc;
         text-decoration: none;
         font-size: 14px;
     }
-    /deep/{
-      .el-menu-demo{
-        border-bottom:none;
-      }
-    }
+    
+    // /deep/{
+    //   .el-menu-demo{
+    //     border-bottom:none;
+    //   }
+    // }
 </style>

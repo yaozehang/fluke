@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <el-tabs class="tabone" v-model="activeName" type="card">
+        <!-- <el-tabs class="tabone" v-model="activeName" type="card">
             <el-tab-pane label="DSX系列" name="DSX">
                 <Product></Product>
             </el-tab-pane>
@@ -31,7 +31,36 @@
             <el-tab-pane label="LinkWare PC" name="PC" class="aa">
                 <Product></Product>
             </el-tab-pane>
-        </el-tabs>
+        </el-tabs> -->
+        <div class="menu-next clearfix">
+            <router-link to="/dsx">
+                <div class="secondMenu" current>DSX系列</div>
+            </router-link>
+            <router-link to="/product/cert">
+                <div class="secondMenu">DTX系列</div>
+            </router-link>
+            <router-link to="/dsx">
+                <div class="secondMenu">OptiFiber</div>
+            </router-link>
+            <router-link to="/product/cert">
+                <div class="secondMenu">CertiFiber</div>
+            </router-link>
+            <router-link to="/dsx">
+                <div class="secondMenu">FI-7000</div>
+            </router-link>
+            <router-link to="/product/cert">
+                <div class="secondMenu">DSX-600</div>
+            </router-link>
+            <router-link to="/dsx">
+                <div class="secondMenu">MultiFibe</div>
+            </router-link>
+            <router-link to="/product/cert">
+                <div class="secondMenu">LinkWare™Live</div>
+            </router-link>
+            <router-link to="/dsx">
+                <div class="secondMenu">LinkWare PC</div>
+            </router-link>
+        </div>
     </div>
 </template>
 
@@ -52,29 +81,16 @@
 </script>
 
 <style lang="scss">
-    .tabone {
-        text-align: center;
-        color: #000;
-        font-weight: bold;
-    };
-    .aa{
-        &:hover{
-            background: #fff;
-            color: #ffd04b;
-        }
-
-    }
-    .el-tabs__item{
-        font-weight: bold;
-        &:hover{
-            color: #000
+    .secondMenu{
+        float: left;
+        width: 150px;
+        height: 30px;
+        &:active{
+            color: #ffd04b
         }
     }
-    
-     .el-tabs__item.is-active{
-        background: #fff;
-        color: #ffd04b;
-        font-weight: bold;
+    .router-link-active {
+        color: #ffd04b
     }
     
 </style>

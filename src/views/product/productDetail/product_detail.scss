@@ -1,0 +1,97 @@
+.container-content {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.desc-breadcrumb{
+    padding: 10px 0;
+}
+
+.detail-img {
+    margin: 10px 0;
+    // padding: 20px;
+    background: #fff;
+}
+
+.detail-big {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f7f7f7;
+
+    
+}
+.detail-bigg {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f7f7f7;   
+}
+
+.detail-text {
+    margin-right: 50px;
+}
+
+.downLoad {
+    margin: 20px;
+    .btn-manual {
+        background: #212121;
+    }
+}
+
+.el-menu-demo {
+    background: #f7f7f7;
+}
+
+.swiper {
+    width: 430px;
+    border-top:1px solid #f7f7f7
+}
+
+.swiper_img {
+    width: 100px;
+    height: 110px;
+    border: 1px solid #f7f7f7;
+}
+
+.right-desc {
+    text-align: left;
+    padding-top: 10px;
+    .title-detail {
+        font-size: 20px;
+        font-weight: 400;
+        color: #4a4a4a;
+        padding: 20px 0;
+    }
+
+    .desc11,
+    .desc-detail {
+        color: #999;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 2;
+
+    }
+    .desc-detail {
+        width: 690px;
+        margin-left: 20px;
+    }
+    .desc-detail li {
+        padding-right: 30px;
+    }
+} 
+.el-tabs__item.is-active{
+    background: #ffd04b;
+    color: #000;
+    font-weight: bold;
+}
+// 轮播图左右箭头
+.swiper-button-prev,.swiper-button-next{
+    height: 40px;
+    width: 10px;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    padding: 10px;
+}
+   
