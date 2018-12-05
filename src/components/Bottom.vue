@@ -5,42 +5,84 @@
         <div class="bot-item fll">
           <ul>
             <li class="title">市场及促销活动</li>
+            <router-link to="/">
             <li class="first">促销活动</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">现场研讨会</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">线上研讨会</li>
+            </router-link>
           </ul>
         </div>
         <div class="bot-item fll" style="padding-left:80px;">
           <ul>
             <li class="title">产品</li>
+            <router-link to="/">
             <li class="first">布线认证</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">铜缆测试与认证</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">光缆测试与认证</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">数据通信安装工具</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">查看所有产品</li>
+            </router-link>
           </ul>
         </div>
         <div class="bot-item fll" style="padding-left:80px;">
           <ul>
             <li class="title">支持</li>
+            <router-link to="/">
             <li class="first">授权经销商查询</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">产品序列号查询</li>
+            </router-link>
+            <router-link to="/dsx">
             <li class="item">产品目录</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">应用文章</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">用户手册</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">软件下载与更新</li>
+            </router-link>
           </ul>
         </div>
         <div class="bot-item fll" style="padding-left:80px;">
           <ul>
             <li class="title">服务与新闻</li>
+            <router-link to="/">
             <li class="first">购买渠道</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">校准与维护服务</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">售后服务</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">预约演示</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">申请培训</li>
+            </router-link>
+            <router-link to="/">
             <li class="item">申请报价</li>
+            </router-link>
+            <router-link to="/about/news">
             <li class="item">新闻中心</li>
+            </router-link>
           </ul>
         </div>
         <div class="bot-item fll" style="padding-left:74px;">
@@ -87,6 +129,9 @@
 </script>
 
 <style scoped lang="scss">
+a {
+  color: #fff;
+}
 ul{
   margin:0;
   padding:0;

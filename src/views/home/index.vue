@@ -11,30 +11,42 @@
       </div>
       <div class="select">
         <div class="w1200">
+          <router-link to="/">
           <div class="select-item fll">
             <img src="/static/img/yulan.png" alt="" class="fll">
             <span  class="fll">预约演示</span>
           </div>
+          </router-link>
+          <router-link to="/">
           <div class="select-item fll">
             <img src="/static/img/peixun.png" alt="" class="fll">
             <span  class="fll">申请培训</span>
           </div>
+          </router-link>
+          <router-link to="/">
           <div class="select-item fll">
             <img src="/static/img/qian.png" alt="" class="fll">
             <span  class="fll">申请报价</span>
           </div>
+          </router-link>
+          <router-link to="/">
           <div class="select-item fll">
             <img src="/static/img/chanpin.png" alt="" class="fll">
             <span  class="fll">产品序列号查询</span>
           </div>
+          </router-link>
+          <router-link to="/">
           <div class="select-item fll">
             <img src="/static/img/jingxiaoshang.png" alt="" class="fll">
             <span  class="fll">经销商查询</span>
           </div>
+          </router-link>
+          <router-link to="/">
           <div class="select-item fll">
             <img src="/static/img/gongju.png" alt="" class="fll">
             <span  class="fll">Versiv工具包配置</span>
           </div>
+          </router-link>
         </div>      
       </div>
       <div class="content w1200">
@@ -92,7 +104,7 @@
                 </div>
               </div>
             </div>
-            <el-button plain class="btn3" style="margin-left: 280px; margin-top:30px;" @click="toEdu">查看更多 ></el-button>
+            <el-button plain class="btn3" @click="toEdu">查看更多 ></el-button>
           </el-card>
         </div>
         <div class="con-title"> 
@@ -106,35 +118,8 @@
           <span class="line"></span>
         </div>
         <div class="news clearfix">
-          <div class="news-left fll">
-            <div class="news-item clearfix">
-              <div class="news-date fll">
-                <div class="date">11/25</div>
-                <div class="year">2019</div>
-              </div>
-              <div class="news-con fll">
-                <div class="title">
-                  您的工具包中有几颗星
-                </div>
-                <div class="news-content">
-                  对于利用福利路康网络的新国家标准详解及最新布线测试知识和技术研讨会--新疆站我们诚挚的邀请您参加福禄克公司举办的2018福禄克新标准详情和最新布线测试技术研讨会。期待您的光临
-                </div>
-              </div>
-            </div>
-            <div class="news-item clearfix">
-              <div class="news-date fll">
-                <div class="date">11/25</div>
-                <div class="year">2019</div>
-              </div>
-              <div class="news-con fll">
-                <div class="title">
-                  您的工具包中有几颗星
-                </div>
-                <div class="news-content">
-                  对于利用福利路康网络的新国家标准详解及最新布线测试知识和技术研讨会--新疆站我们诚挚的邀请您参加福禄克公司举办的2018福禄克新标准详情和最新布线测试技术研讨会。期待您的光临
-                </div>
-              </div>
-            </div>
+          <router-link to="/about/news/newsDetail">
+          <div class="news-left fll" v-for="o in 5" :key="o">
             <div class="news-item clearfix">
               <div class="news-date fll">
                 <div class="date">11/25</div>
@@ -150,37 +135,8 @@
               </div>
             </div>
           </div>
-          <div class="news-right fll">
-            <div class="news-item clearfix">
-              <div class="news-date fll">
-                <div class="date">11/25</div>
-                <div class="year">2019</div>
-              </div>
-              <div class="news-con fll">
-                <div class="title">
-                  您的工具包中有几颗星
-                </div>
-                <div class="news-content">
-                  对于利用福利路康网络的新国家标准详解及最新布线测试知识和技术研讨会--新疆站我们诚挚的邀请您参加福禄克公司举办的2018福禄克新标准详情和最新布线测试技术研讨会。期待您的光临
-                </div>
-              </div>
-            </div>
-             <div class="news-item clearfix">
-              <div class="news-date fll">
-                <div class="date">11/25</div>
-                <div class="year">2019</div>
-              </div>
-              <div class="news-con fll">
-                <div class="title">
-                  您的工具包中有几颗星
-                </div>
-                <div class="news-content">
-                  对于利用福利路康网络的新国家标准详解及最新布线测试知识和技术研讨会--新疆站我们诚挚的邀请您参加福禄克公司举办的2018福禄克新标准详情和最新布线测试技术研讨会。期待您的光临
-                </div>
-              </div>
-            </div>
-            <el-button plain class="btn3" style="margin-left:230px;margin-top:120px;" @click="toNews">查看更多 ></el-button>
-          </div>
+          </router-link>
+          <el-button plain class="btn3" style="margin-left:230px;margin-top:120px;" @click="toNews">查看更多 ></el-button>
         </div>
       </div>
     </div>

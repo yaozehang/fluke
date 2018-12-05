@@ -6,42 +6,36 @@
 
 .content {
     background: #fff;
-    margin-bottom: 20px;
+    padding: 10px 0;
 }
 
-.breadcrumb {
-    padding: 20px 0;
-}
-.el-breadcrumb__inner{
-    padding: 20px 0;
-}
-
-.box-news {
-    cursor: pointer;
-    &:hover {
-        background: #ffd04b;
-
-    }
-
-}
-
-.left-news {
-    padding: 65px 20px 40px 20px;
-}
-
-.date {
-    font-size: 20px;
+.bread {
+    padding:20px 0;
+    font-size: 14px;
+    font-family: "PingFang";
+    color: rgb( 153, 153, 153 );
     font-weight: bold;
-    color: #333; // margin-right: 20px;
+      a{
+        color: rgb( 153, 153, 153 );
+      } 
+  }
+
+.item {
+    margin: 0 20px;
+    padding: 20px;
 }
 
-.date-year {
-    font-size: 16px;
-    color: #595959
+.item:hover{
+    background-color: #ffc71b;
+    .card-content {
+        color: #000
+    }
+    .card-arrows{
+        color: #000;
+    }
 }
 
 .right-news {
-    width: 500px;
     .news-title {
         color: #333;
         font-size: 18px;
@@ -56,9 +50,46 @@
         font-size: 24px;
         color: #999;
     }
-} // 分页
+} 
+    .card-right {
+      width: 419px;
+      padding-left: 30px;
+    }
+    .card-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .card-content {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #999;
+      padding: 15px 0;
+    }
+    .card-arrows {
+      font-size: 24px;
+      color: #999;
+    }
+    .box {
+      margin-top: 20px;
+      .date {
+        font-size: 24px;
+        font-family: "PingFang";
+        color: rgb( 33, 33, 33 );
+        font-weight: bold;
+      }
+      .year {
+        font-size: 18px;
+        font-family: "PingFang";
+        color: rgb( 33, 33, 33 );
+      }
+    }
+    .btn3 {
+      margin: 30px 0 20px 280px;
+    }
+
+// 分页
 .page {
-    background: #fff;
     text-align: center;
     padding: 20px 0;
+    margin-bottom: 20px;
 }

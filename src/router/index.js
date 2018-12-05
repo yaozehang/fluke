@@ -4,45 +4,74 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const components = {
-  home: () => import('@/views/home'),
-  news: () => import('@/views/news'),
-  newsDetail: () => import('@/views/news/detail'),
-  call: () => import('@/views/call'),
+  home: () => import('@/views/home'),                              //首页
+  layout: () => import("@/views/layout/layout"),                   //主视图
+  about: () => import("@/views/about/layout"),                     //关于
+  call: () => import('@/views/about/call'),                        //联系我们
+  news: () => import('@/views/about/news'),                        //新闻中心
+  newsDetail: () => import('@/views/about/news/detail'),           //新闻详情
+  product: () => import("@/views/product"),                        
+  dsx: () => import("@/views/product/product"),
+  cert: () => import("@/views/product/second-detail"),
+  active: () => import("@/views/active/index.vue"),
+  education: () => import("@/views/education/education"),
+  DTX: () => import("@/views/product/productDetail/productDetail"),
 }
 
 export default new Router({
   routes: [
-
-    {
-      path: '/about/news',
-      name: 'news',
-      component: components.news
-    },
-    {
-      path: '/about/news/newsDetail',
-      name: 'newsDetail',
-      component: components.newsDetail
-    },
-    {
-      path: '/about/call',
-      name: 'call',
-      component: components.call
-    },
     {
       path: "/",
       redirect: "/home",
-      component: () => import("@/views/layout/layout.vue"),
+      component: components.layout,
       children: [
         {
           path: '/home',
           name: 'home',
-          component: components.home
+          component: components.home,
+          meta:{
+            title:'首页'
+          }
+        },
+        {
+          path:'/about',
+          name:'about',
+          component:components.about,
+          meta:{
+            title:'关于'
+          },
+          children:[
+            {
+              path:'news',
+              name:'news',
+              component: components.news,
+              meta:{
+                title:'新闻中心'
+              }
+            },
+            {
+              path: 'call',
+              name: 'call',
+              component: components.call,
+              meta:{
+                title:'联系我们'
+              }
+            },
+          ]
+        },
+        {
+          path: '/about/news/newsDetail',
+          name: 'newsDetail',
+          component: components.newsDetail,
+          meta:{
+            title:'新闻详情'
+          }
         },
         {
           path: "/product",
           name: "product",
           redirect:"dsx",
-          component: () => import("@/views/product/index.vue"),
+          component: components.product,
           meta: {
             title: "产品"
           },
@@ -50,7 +79,7 @@ export default new Router({
             {
               path: "/dsx",
               name: "dsx",
-              component: () => import("@/views/product/product.vue"),
+              component: components.dsx,
               meta: {
                 title: "列表"
               }
@@ -58,7 +87,7 @@ export default new Router({
             {
               path: "cert",
               name: "cert",
-              component: () => import("@/views/product/second-detail.vue"),
+              component: components.cert,
               meta: {
                 title: "列表2"
               }
@@ -68,7 +97,7 @@ export default new Router({
         {
           path: "/active",
           name: "active",
-          component: () => import("@/views/active/index.vue"),
+          component: components.active,
           meta: {
             title: "活动"
           }
@@ -76,7 +105,7 @@ export default new Router({
         {
           path: "/education",
           name: "education",
-          component: () => import("@/views/education/education.vue"),
+          component: components.education,
           meta: {
             title: "教育"
           }
@@ -87,7 +116,7 @@ export default new Router({
     {
       path: "/detail",
       name: "DTX",
-      component: () => import("@/views/product/productDetail/productDetail.vue"),
+      component: components.DTX,
       meta: {
         title: "DTX系列"
       }

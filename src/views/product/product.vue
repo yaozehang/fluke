@@ -2,46 +2,7 @@
     <div class="container">
         <div class="product-img">
             <div class="clearfix">
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>      
-                <ImgBox></ImgBox>      
-            </div>
-             <div class="clearfix">
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>      
-                <ImgBox></ImgBox>      
-            </div>
-             <div class="clearfix">
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>      
-                <ImgBox></ImgBox>      
-            </div>
-             <div class="clearfix">
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>      
-                <ImgBox></ImgBox>      
-            </div>
-             <div class="clearfix">
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>      
-            </div>
-             <div class="clearfix">
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>  
-                <ImgBox></ImgBox>      
+                <ImgBox v-for="o in 30" :key="o"></ImgBox>    
             </div>
         </div>
     </div>

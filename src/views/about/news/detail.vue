@@ -1,6 +1,4 @@
 <template>
-  <div>
-    <Header></Header>
     <div class="w1200">
       <div class="bread">
         <span>当前位置：</span>
@@ -26,8 +24,6 @@
         </div>
       </div>
     </div>
-    <Bottom></Bottom>
-  </div>
 </template>
 
 <script>

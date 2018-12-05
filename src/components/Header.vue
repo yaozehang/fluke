@@ -34,7 +34,7 @@
           <div class="search fll">
             <form action="" class="form">
               <select slot="prepend" placeholder="请选择" value="" class="select">
-                <option label="餐厅" value="1"></option>
+                <option label="新闻" value="1"></option>
                 <option label="订单" value="2"></option>
                 <option label="用户" value="3"></option>
               </select>
@@ -124,6 +124,7 @@
       height: 15px;
       display: inline-block;
       margin-left: 0px;
+      cursor: pointer;
     } 
     // 个人中心
     .config {

@@ -45,3 +45,8 @@ ul {
   -ms-user-select:none;
   user-select:none;
   }
+
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background-color: #fcc800  !important;
+  color: #fff;
+}
